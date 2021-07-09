@@ -7,6 +7,7 @@ import SignUp from "./pages/SignUp/SignUp";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import { Navbar, Footer } from "./components";
+import Slideshow from './components/SlideShow/slideshow';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/products" component={Products} />
         <Route path="/sign-up" component={SignUp} />
       </Switch>
+      <Slideshow/>
       <Footer />
     </Router>
   );
